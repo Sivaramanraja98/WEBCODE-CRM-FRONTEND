@@ -16,11 +16,11 @@ const UserHomePage = () => {
     <div>
       <NavigationBar />
       <div style={{ backgroundColor: "yellow", fontWeight: "bold" }}>
-        <marquee>
+        <div>
           <p className="pt-2 lead" style={{ fontWeight: "bold" }}>
             * Please get Premium to unlock More Features *
           </p>
-        </marquee>
+        </div>
       </div>
       <main>
         <h1 className="text-center pt-2">Welcome ! User</h1>

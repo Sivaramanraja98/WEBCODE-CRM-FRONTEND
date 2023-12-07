@@ -1,12 +1,11 @@
 import { useState } from "react";
-import { useNavigate, NavLink } from "react-router-dom";
+import {  NavLink } from "react-router-dom";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "../LandingPage.css";
 
 const CreateLeads = () => {
-  const navigate = useNavigate();
 
   const [employeeDetails, setEmployeeDetails] = useState({
     name: "",

@@ -23,7 +23,7 @@ function Content() {
             </a>
             <a
               className="btn btn-lg btn-primary-soft text-primary fw-500"
-              href="#"
+              href="#A"
             >
               Documentation
             </a>

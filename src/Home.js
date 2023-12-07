@@ -11,6 +11,7 @@ const Home = () => {
         >
           <div className="container">
             <a
+              href="#home"
               className="navbar-brand"
               style={{ fontWeight: "bold", color: "darkBlue" }}
             >
@@ -29,11 +30,9 @@ const Home = () => {
             </button>
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div className="navbar-nav ms-auto">
-                <a className="nav-link">
-                  <NavLink className="navbar-brand" to="/signin">
-                    Login
-                  </NavLink>
-                </a>
+                <NavLink className="nav-link navbar-brand" to="/signin">
+                  Login
+                </NavLink>
               </div>
             </div>
           </div>

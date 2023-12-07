@@ -111,7 +111,7 @@ const Signin = ({ setLoginUser }) => {
             <p>
               Not a member?{" "}
               <NavLink to="/signup">
-                <a>Register</a>
+                Register
               </NavLink>
             </p>
           </div>
