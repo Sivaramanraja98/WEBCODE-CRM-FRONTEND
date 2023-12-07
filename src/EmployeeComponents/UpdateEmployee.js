@@ -15,7 +15,7 @@ const UpdateEmployee = () => {
 
     useEffect(() => {
         const id = params.id.toString();
-        axios.get(`https://crmbackend-6tdy.onrender.com/api/get-single-employees/${id}`).then(response => {
+        axios.get(`https://crmbackend1-gbi7.onrender.com/api/get-single-employees/${id}`).then(response => {
             setEmployeeDetails(response.data[0]);
             console.log(response)
         }).catch(err => {
@@ -28,7 +28,7 @@ const UpdateEmployee = () => {
         const id = params.id.toString();
         const newEmployee = {...employeeDetails};
         try{
-            const response = await axios.put(`https://crmbackend-6tdy.onrender.com/api/update-employee/${id}`, newEmployee);
+            const response = await axios.put(`https://crmbackend1-gbi7.onrender.com/api/update-employee/${id}`, newEmployee);
             if(response){
                 setEmployeeDetails({
                     name: "",

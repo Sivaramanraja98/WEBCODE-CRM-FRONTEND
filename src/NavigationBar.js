@@ -11,7 +11,7 @@ function NavigationBar () {
   const handleLogout = () => {
     try {
       axios
-        .get(`https://crmbackend-6tdy.onrender.com/api/signout`)
+        .get(`https://crmbackend1-gbi7.onrender.com/api/signout`)
         .then(res => {
           if (res) {
             localStorage.removeItem('TOKEN')

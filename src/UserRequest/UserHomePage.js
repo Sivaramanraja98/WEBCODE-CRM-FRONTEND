@@ -1,34 +1,34 @@
-import { useEffect } from 'react'
-import { useNavigate } from 'react-router-dom'
-import NavigationBar from '../NavigationBar'
-import Content from '../Content'
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import NavigationBar from "../NavigationBar";
+import Content from "../Content";
 
 const UserHomePage = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   useEffect(() => {
-    const token = localStorage.getItem('TOKEN')
+    const token = localStorage.getItem("TOKEN");
     if (!token) {
-      navigate('/')
+      navigate("/");
     }
-  }, [navigate])
+  }, [navigate]);
   return (
     <div>
       <NavigationBar />
-      <div style={{ backgroundColor: 'yellow', fontWeight: 'bold' }}>
+      <div style={{ backgroundColor: "yellow", fontWeight: "bold" }}>
         <marquee>
-          <p className='pt-2 lead' style={{ fontWeight: 'bold' }}>
+          <p className="pt-2 lead" style={{ fontWeight: "bold" }}>
             * Please get Premium to unlock More Features *
           </p>
         </marquee>
       </div>
       <main>
-        <h1 className='text-center pt-2'>Welcome ! User</h1>
-        <p className='lead text-center'>Hi ! {localStorage.getItem('NAME')}</p>
+        <h1 className="text-center pt-2">Welcome ! User</h1>
+        <p className="lead text-center">Hi ! {localStorage.getItem("NAME")}</p>
         <Content />
       </main>
     </div>
-  )
-}
+  );
+};
 
-export default UserHomePage
+export default UserHomePage;

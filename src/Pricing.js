@@ -13,7 +13,7 @@ const Pricing = () => {
   async function handleToken (token) {
     const body = { token, product }
     const headers = { 'Content-Type': 'application/json' }
-    return fetch(`https://crmbackend-6tdy.onrender.com/api/checkout`, {
+    return fetch(`https://crmbackend1-gbi7.onrender.com/api/checkout`, {
       method: 'POST',
       headers,
       body: JSON.stringify(body)
