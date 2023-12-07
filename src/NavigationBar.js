@@ -80,17 +80,17 @@ function NavigationBar() {
             </div>
           ) : (
             <div className="navbar-nav ms-auto">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="#pricing">
                 <NavLink className="nav-link" to="/pricing">
                   Pricing
                 </NavLink>
               </a>
-              <a className="nav-link">
+              <a className="nav-link" href="#createlead">
                 <NavLink className="nav-link" to="/lead/create">
                   Create Query
                 </NavLink>
               </a>
-              <a className="nav-link">
+              <a className="nav-link" href="#home">
                 <NavLink onClick={handleLogout} className="nav-link" to="/">
                   Logout
                 </NavLink>

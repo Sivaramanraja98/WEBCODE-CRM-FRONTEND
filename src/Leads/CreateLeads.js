@@ -56,7 +56,7 @@ const CreateLeads = () => {
 
   return (
     <>
-      <div className="formStepsContact">
+      <div className="formStepsContact" id="createlead">
         <h3>Create Query</h3>
         <form style={{ width: "50vw" }} onSubmit={handleSubmit}>
           <div className="form-group">

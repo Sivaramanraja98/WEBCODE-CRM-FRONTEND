@@ -27,7 +27,7 @@ const Pricing = () => {
   }
   return (
     <>
-      <div className='container-fluid' style={{ backgroundColor: '#B9D9EB' }}>
+      <div className='container-fluid' id='pricing' style={{ backgroundColor: '#B9D9EB' }}>
         <div className='p-5'>
           <div className='row'>
             <h1 className='text-center text-primary p-4'>Pricing</h1>

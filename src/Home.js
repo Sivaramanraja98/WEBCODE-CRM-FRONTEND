@@ -3,7 +3,7 @@ import Content from "./Content";
 
 const Home = () => {
   return (
-    <div className="container-fluid">
+    <div className="container-fluid" id="home">
       <div className="row">
         <nav
           className="navbar navbar-expand-lg"
